@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(to bottom , rgb(247, 180, 23, .8) 43%, rgb(253, 8, 7, .8) 86%, rgb(160, 3, 8, .9) 100%);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    
+}
+
+div.ui.basic.center.aligned.segment {
+    margin-top: 40px;
+}
+
+

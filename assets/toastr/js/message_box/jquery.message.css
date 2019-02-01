@@ -1,0 +1,93 @@
+#confirmBox {
+    position: fixed;
+    z-index: 10;
+    top: 53px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(95, 86, 86, 0.28);
+    padding-top: 53px;
+    text-align: center;
+}
+
+    #confirmBox .frame {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 4px;
+        border: solid 1px #b1adad;
+        max-width: 500px;
+        text-align: left;
+    }
+
+        #confirmBox .icon {
+            background: url("question.png");
+            height: 45px;
+            width: 45px;
+            margin: 20px 15px;
+            float: left;
+            opacity: .2;
+        }
+        
+            #confirmBox .icon-unable {
+                background: url("unable.png");
+            }
+            
+            #confirmBox .icon-warning {
+                background: url("warning.png");
+            }
+            
+            #confirmBox .icon-information {
+                background: url("information.png");
+            }
+            
+
+        #confirmBox .title {
+            background-color: #1f4991;
+            color: #fff;
+            padding: 5px 10px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border: solid 1px #1f4991;
+            text-align: left;
+        }
+
+        #confirmBox .message {
+            margin-left: 80px;
+        }
+
+            #confirmBox .right {
+                display: block;
+                padding: 32px 40px 30px 0px; */
+            }
+
+        #confirmBox hr {
+            margin: 0px;
+            clear: both;
+            border: none;
+        }
+
+        #confirmBox .frame > span {
+            display: block;
+            text-align: right;
+            border-top: solid 1px #ddd;
+            padding: 5px;
+        }
+
+            #confirmBox button {
+                display: inline-block;
+                background-color: #fff;
+                border: solid 1px #ddd;
+                padding: 7px 13px;
+                margin-left: 5px;
+                border-radius: 4px;
+                font-size: 12px;
+                cursor: pointer;
+            }
+
+                #confirmBox button:hover {
+                    background-color: #efefef;
+                }
+
+                #confirmBox button:active {
+                    background-color: #e5e5e5;
+                }

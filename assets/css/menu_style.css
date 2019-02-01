@@ -1,0 +1,39 @@
+body {
+    /* background: linear-gradient(to bottom, #ffffff 70%, #cbf3ff 100%); */
+    background-color: #f1f9fc   ;
+    background-image: url('../img/centerv_logo_bg.png');
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    /* background-position: -20% 90%; */
+    /* background-position: left bottom; */
+    /* background-position: -130px 200px; */
+    background-size: 65px 50px;
+    /* background-size: 510px 430px; */
+
+
+}
+
+.ui.big.menu {
+    background: linear-gradient(to right, #f7b417 25%, #fd0807 65%, #a00308 100%);
+    margin: 0px;
+    
+    
+}
+
+#log_out {
+    color: white;
+}
+
+.ui.table {
+    background-color: rgba(250, 247, 247, 1);
+}
+
+.ui.fluid.raised.card {
+    position: absolute;
+    top: 50px;
+}
+
+.ui.orange.secondary.pointing.stackable.menu {
+    background-color: rgba(250, 247, 247, 1);
+    margin-top: 0px;
+}

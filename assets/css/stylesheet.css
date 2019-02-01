@@ -1,0 +1,113 @@
+/*MainBody*/
+#body{
+	background: ;
+	/*background: url('/sis_se/images/bg2.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;*/
+}
+#navbar_header{
+	background: #1ab394;
+}
+#login-box-body{
+	/*opacity: 0.5;*/
+	width: 100%;
+	height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+}
+#username{
+	border-radius: 20px;
+}
+#password{
+	border-radius: 20px;
+}
+#sign_in{
+	border-radius: 20px;
+}
+#login-box{
+	/*opacity: 0.3;*/
+	float: right;
+	margin: 110px 150px 10px 10px;
+}
+#create_acc{
+	/*color: black;*/
+	font-stretch: 10;
+	font-style: italic;
+}
+#bodyhome{
+	background-position: 50%;
+}
+#modal-title{
+	position: center;
+	font-weight: bold;
+}
+#modal-header, #modal-body, #modal-footer{
+	background: #f2f2f2;
+}
+#learn, #test{
+	border-radius: 50px;
+	width: 40%;
+	height: 100px;
+	margin-top: 230px;
+	font-family: DK Crayon Crumble;
+	font-size: 45px;
+
+}
+#learn:hover{
+	background-color: #006600;
+	color: #b3ffb3;
+
+}
+#test:hover{
+	background-color: #006600;
+	color: #b3ffb3;
+
+}
+#test{
+	margin-left: 190px;
+}
+
+#button1{
+	width: 100%;
+	height: 80px;
+	margin-top: 30px;
+	font-family: DK Crayon Crumble;
+	font-size: 30px;
+	margin-top: 45px;
+}
+#button1:hover{
+	background-color: #006600;
+	color: #b3ffb3;
+}
+#box-m{
+	background-color:  #99ffcc;
+    width: 300px;
+    padding: 50px;
+    
+    margin: 25px;
+}
+#testbutton{
+	width: 100%;
+	height: 80px;
+	margin-top: 200px;
+	border-radius: 50px;
+	font-size: 40px;
+	font-family:DK Crayon Crumble ;
+	background-color: #009900;
+}
+#testbutton:hover{
+	background-color: #006600;
+	color: #b3ffb3;
+}
+#mikeNavbar{
+	background: #1ab394;
+}
+#mikeLogo{
+	background: #1ab394;
+}
+#try1{
+	background: #1ab394;
+}
+
