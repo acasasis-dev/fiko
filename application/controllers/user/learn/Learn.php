@@ -3,11 +3,7 @@
 class Learn extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
-		// $this->load->model('admin/M_home');
-		session_start();
-		if( !$_SESSION ) {
-			redirect('login');
-		}
+		// $this->load->model('admin/M_home');		
 	}
 	public function index(){
 		$this->load->view('user/learn/V_learn.php');

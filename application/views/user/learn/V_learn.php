@@ -68,7 +68,7 @@
                 <!-- The user image in the navbar-->
                 <img src="<?= base_url()?>assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                <span class="hidden-xs"><?= $_SESSION[ "userdata" ]->firstname ?> <?= $_SESSION[ "userdata" ]->lastname ?></span>
+                <span class="hidden-xs"><?= $_SESSION[ "userdata" ][0]->firstname. " " .$_SESSION[ "userdata" ][0]->lastname ?></span>
               </a>
               <ul class="dropdown-menu" role="menu" style="width: 10px;">
                 <li><a href="#">Acounts</a></li>

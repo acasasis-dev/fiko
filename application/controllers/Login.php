@@ -3,8 +3,7 @@
 class Login extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
-		session_start();
-		$this->load->model('M_login');
+		$this->load->model('M_login');		
 	}
 
 	public function example() {
@@ -26,25 +25,19 @@ class Login extends CI_Controller{
 			$this->load->view('V_login.php', $data);
 		}
 		else{
-			if($_POST){
-				$user_credential = $this->M_login->m_user($_POST)[0];
-				if( $user_credential ) {
-					$u = $user_credential;
-					$_SESSION[ "userdata" ] = $u;		
-				}
+			if( $_POST ) {
+				$u = $this->M_login->m_user($_POST);
 				if( $u ) {
-					if( $u->role_id == 1){
+					$_SESSION[ "userdata" ] = $u;
+					if( $u[0]->role_id == 1){
 						redirect('admin/home');	
-					}
-					else if( $u->role_id == 2){
+					} else if( $u[0]->role_id == 2){
 						redirect('user/home');
 					}
-				}
-				else{
+				} else {
 					redirect('login/index');
 				}
-			}
-			
+			}			
 		}
 	}
 	public function create_user(){
