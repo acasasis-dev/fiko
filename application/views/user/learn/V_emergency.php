@@ -95,7 +95,19 @@
 
       <!-- Main content -->
       <section class="content">
-        
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Emergency: Hospital
+              <button onclick="playAudio( '0004-hospital.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
       </section>
       <!-- /.content -->
     </div>
@@ -105,6 +117,12 @@
 </div>
 <!-- ./wrapper -->
 
+<script>
+  function playAudio( x ) {
+    y = new Audio( "<?= base_url() ?>files/emergency/" + x )
+    y.play()
+  }
+</script>
 <!-- jQuery 3 -->
 <script src="<?= base_url()?>assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->

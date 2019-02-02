@@ -30,13 +30,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <style type="text/css">
     #audio{
-  background-color: #26a1c9;
-  border-style: none;
-  border-radius: 20px;
-  color: white;
-  font-size: 15px;
-
-  }
+      background-color: #26a1c9;
+      border-style: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 15px;
+    }
   </style>
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
@@ -110,7 +109,7 @@
           <div class="box box-default">
             <!-- /.box-header -->
             <div class="box-body">
-              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
               Letter: A
               
               <!-- <audio controls style="width:100%;">
@@ -123,10 +122,7 @@
                 Your browser does not support the audio element.
               </audio> -->
 
-                <button onclick="playAudio()" value="sound" type="button" id="audioA"><span class="glyphicon glyphicon-play"></span></button>
-        
-
-              
+                <button onclick="playAudio()" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
             </div>
             <!-- /.box-body -->
           </div>
@@ -153,7 +149,6 @@
               <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
                Letter: C
              <button onclick="playAudio()" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
-              
             </div>
             <!-- /.box-body -->
           </div>
@@ -209,7 +204,7 @@
 <script src="<?= base_url()?>assets/dist/js/demo.js"></script>
 <script> 
   function playAudio() {
-    var x = document.getElementById("audioA");  new Audio('<?= base_url()?>files/kakain.mp3');
+    var x = new Audio('<?= base_url()?>files/kakain.mp3');
     x.play();
   }
 </script>

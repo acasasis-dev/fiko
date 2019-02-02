@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -95,7 +95,172 @@
 
       <!-- Main content -->
       <section class="content">
-        
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+              Body Part: Body
+              
+              <!-- <audio controls style="width:100%;">
+                 -->
+
+
+                
+              <!-- <audio id="myAudio">  
+                <source src="<?= base_url()?>files/kakain.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio> -->
+
+                <button onclick="playAudio( '0001-body.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+              Body Part: Mouth
+            
+              <button onclick="playAudio( '0002-mouth.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+          
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+               Body Part: Eye
+             <button onclick="playAudio( '0003-eye.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+               Body Part: Ear
+              <button onclick="playAudio( '0004-ear.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Body Part: Nose
+              <button onclick="playAudio( '0005-nose.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Body Part: Face
+              <button onclick="playAudio( '0006-face.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Body Part: Hand
+              <button onclick="playAudio( '0007-hand.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Body Part: Foot
+              <button onclick="playAudio( '0008-foot.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Body Part: Leg
+              <button onclick="playAudio( '0009-leg.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Body Part: Finger
+              <button onclick="playAudio( '0010-finger.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Body Part: Hair
+              <button onclick="playAudio( '0011-head-hair.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Body Part: Tooth
+              <button onclick="playAudio( '0012-tooth.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
       </section>
       <!-- /.content -->
     </div>
@@ -104,7 +269,12 @@
   <!-- /.content-wrapper -->
 </div>
 <!-- ./wrapper -->
-
+<script>
+  function playAudio( x ) {
+    y = new Audio( "<?= base_url() ?>files/body_parts/" + x )
+    y.play()
+  }
+</script>
 <!-- jQuery 3 -->
 <script src="<?= base_url()?>assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->

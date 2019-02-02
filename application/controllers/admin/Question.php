@@ -4,9 +4,7 @@ class Question extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('admin/M_question');
-		if(empty($this->session->userdata('userdata'))){
-			redirect('login');
-		}
+		$this->sesscheck();
 	}
 	public function index(){
 		$this->load->view('admin/question/extra/header_question.php');

@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-<body class="hold-transition skin-blue layout-top-nav">
+<body class="hold-transition skin-blue layout-top-nav" style="background-image: url( '/images/login.jpg')">
 <div class="wrapper">
 
   <header class="main-header">
@@ -99,7 +99,7 @@
       <!-- Main content -->
       <section class="content">
         <div class="col-lg-4 col-xs-6">
-          <a href="#" class="btn btn-success" id="testbutton">Easy</a>
+          <a href="<?= base_url() ?>user/test/test/easy" class="btn btn-success" id="testbutton">Easy</a>
         </div>
         <div class="col-lg-4 col-xs-6">
           <a href="#" class="btn btn-success" id="testbutton">Medium</a>

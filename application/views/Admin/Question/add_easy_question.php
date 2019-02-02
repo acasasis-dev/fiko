@@ -37,7 +37,7 @@
                     <i class="fa fa-question"></i>
                   </div>
                   <?= form_error('correct_answer') != null ? '<div class="form-group has-error">' : '<div class="form-group has-feedback">'?>
-                  <input type="text" <?= isset($errors['correct_answer'])? 'title="'.$errors['correct_answer'].'"': 'title=""';?> value="<?= set_value('correct_answer')?>" name="correct_answer" class="form-control" placeholder="Enter Choice 1">
+                  <input type="text" <?= isset($errors['correct_answer'])? 'title="'.$errors['correct_answer'].'"': 'title=""';?> value="<?= set_value('correct_answer')?>" name="correct_answer" class="form-control" placeholder="Enter Correct Answer">
                   </div>
                 </div>
                 <?= form_error('correct_answer')?>
@@ -50,7 +50,7 @@
                     <i class="fa fa-question"></i>
                   </div>
                   <?= form_error('wrong_answer_one') != null ? '<div class="form-group has-error">' : '<div class="form-group has-feedback">'?>
-                  <input type="text" <?= isset($errors['wrong_answer_one'])? 'title="'.$errors['wrong_answer_one'].'"': 'title=""';?> value="<?= set_value('wrong_answer_one')?>" name="wrong_answer_one" class="form-control" placeholder="Enter Choice 2">
+                  <input type="text" <?= isset($errors['wrong_answer_one'])? 'title="'.$errors['wrong_answer_one'].'"': 'title=""';?> value="<?= set_value('wrong_answer_one')?>" name="wrong_answer_one" class="form-control" placeholder="Enter Choice 1">
                   </div>
                 </div>
                 <?= form_error('wrong_answer_one')?>
@@ -63,7 +63,7 @@
                     <i class="fa fa-question"></i>
                   </div>
                   <?= form_error('wrong_answer_two') != null ? '<div class="form-group has-error">' : '<div class="form-group has-feedback">'?>
-                  <input type="text" <?= isset($errors['wrong_answer_two'])? 'title="'.$errors['wrong_answer_two'].'"': 'title=""';?> value="<?= set_value('wrong_answer_two')?>" name="wrong_answer_two" class="form-control" placeholder="Enter Choice 3">
+                  <input type="text" <?= isset($errors['wrong_answer_two'])? 'title="'.$errors['wrong_answer_two'].'"': 'title=""';?> value="<?= set_value('wrong_answer_two')?>" name="wrong_answer_two" class="form-control" placeholder="Enter Choice 2">
                   </div>
                 </div>
                 <?= form_error('wrong_answer_two')?>
@@ -76,7 +76,7 @@
                     <i class="fa fa-question"></i>
                   </div>
                   <?= form_error('wrong_answer_three') != null ? '<div class="form-group has-error">' : '<div class="form-group has-feedback">'?>
-                  <input type="text" <?= isset($errors['wrong_answer_three'])? 'title="'.$errors['wrong_answer_three'].'"': 'title=""';?> value="<?= set_value('wrong_answer_three')?>" name="wrong_answer_three" class="form-control" placeholder="Enter Correct Answer">
+                  <input type="text" <?= isset($errors['wrong_answer_three'])? 'title="'.$errors['wrong_answer_three'].'"': 'title=""';?> value="<?= set_value('wrong_answer_three')?>" name="wrong_answer_three" class="form-control" placeholder="Enter Choice 3">
                   </div>
                 </div>
                 <?= form_error('wrong_answer_three')?>

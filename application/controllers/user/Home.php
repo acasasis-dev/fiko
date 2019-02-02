@@ -4,9 +4,7 @@ class Home extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
 		// $this->load->model('admin/M_home');
-		if( !$_SESSION[ "userdata" ] ){
-			redirect('login');
-		}
+		$this->sesscheck();
 	}
 	public function index(){
 		$this->load->view('user/Home/V_home.php');

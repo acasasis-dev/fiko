@@ -95,7 +95,84 @@
 
       <!-- Main content -->
       <section class="content">
-        
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Shopping: Cheap
+              <button onclick="playAudio( '0001-cheap.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Shopping: Expensive
+              <button onclick="playAudio( '0002-expensive.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Shopping: Store
+              <button onclick="playAudio( '0002-store.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Shopping: Wallet
+              <button onclick="playAudio( '0002-wallet.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Shopping: Department Store
+              <button onclick="playAudio( '0003-department-store.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Shopping: Money
+              <button onclick="playAudio( '0012-money.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
       </section>
       <!-- /.content -->
     </div>
@@ -105,6 +182,12 @@
 </div>
 <!-- ./wrapper -->
 
+<script>
+  function playAudio( x ) {
+    y = new Audio( "<?= base_url() ?>files/shopping/" + x )
+    y.play()
+  }
+</script>
 <!-- jQuery 3 -->
 <script src="<?= base_url()?>assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
