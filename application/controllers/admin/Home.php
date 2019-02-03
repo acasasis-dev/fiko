@@ -3,10 +3,7 @@
 class Home extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
-		// $this->load->model('admin/M_home');
-		if(empty($this->session->userdata('userdata'))){
-			redirect('login');
-		}
+		// $this->load->model('admin/M_home');		
 	}
 	public function index(){
 		$data['users'] = $this->display_user();
