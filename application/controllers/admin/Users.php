@@ -4,9 +4,7 @@ class Users extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('admin/M_users');
-		if(empty($this->session->userdata('userdata'))){
-			redirect('login');
-		}
+		$this->sesscheck();
 	}
 	public function index(){
 		$data['user'] = $this->M_users->m_get_users();

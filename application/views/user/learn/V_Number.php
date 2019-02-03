@@ -90,12 +90,373 @@
     <div class="container">
       <!-- Content Header (Page header) -->
       <section class="content-header">
+
         <!-- for header -->
       </section>
 
       <!-- Main content -->
       <section class="content">
-        
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+              Number: 1
+              
+              <!-- <audio controls style="width:100%;">
+                 -->
+
+
+                
+              <!-- <audio id="myAudio">  
+                <source src="<?= base_url()?>files/kakain.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio> -->
+
+                <button onclick="playAudio( '0001-one.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+              Number: 2
+            
+              <button onclick="playAudio( '0002-two.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+          
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+               Number: 3
+             <button onclick="playAudio( '0003-three.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+               Number: 4
+              <button onclick="playAudio( '0004-four.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 5
+              <button onclick="playAudio( '0005-five.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 6
+              <button onclick="playAudio( '0006-six.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 7
+              <button onclick="playAudio( '0007-seven.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 8
+              <button onclick="playAudio( '0008-eight.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 9
+              <button onclick="playAudio( '0009-nine.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 10
+              <button onclick="playAudio( '0010-ten.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 11
+              <button onclick="playAudio( '0011-eleven.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 12
+              <button onclick="playAudio( '0012-twelve.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 13
+              <button onclick="playAudio( '0013-thirteen.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 14
+              <button onclick="playAudio( '0014-fourteen.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 15
+              <button onclick="playAudio( '0015-fifteen.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 16
+              <button onclick="playAudio( '0016-sixteen.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 17
+              <button onclick="playAudio( '0017-seventeen.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 18
+              <button onclick="playAudio( '0018-eighteen.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 19
+              <button onclick="playAudio( '0019-nineteen.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 20
+              <button onclick="playAudio( '0020-twenty.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 30
+              <button onclick="playAudio( '0021-thirty.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 40
+              <button onclick="playAudio( '0022-fourty.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 50
+              <button onclick="playAudio( '0023-fifty.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 60
+              <button onclick="playAudio( '0024-sixty.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 70
+              <button onclick="playAudio( '0025-seventy.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 80
+              <button onclick="playAudio( '0026-eighty.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
+               Number: 90
+              <button onclick="playAudio( '0027-ninety.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
       </section>
       <!-- /.content -->
     </div>
@@ -103,7 +464,13 @@
   </div>
   <!-- /.content-wrapper -->
 </div>
-<!-- ./wrapper -->
+ 
+<script>
+  function playAudio( x ) {
+    y = new Audio( "<?= base_url() ?>files/numbers/" + x )
+    y.play()
+  }
+</script>
 
 <!-- jQuery 3 -->
 <script src="<?= base_url()?>assets/bower_components/jquery/dist/jquery.min.js"></script>

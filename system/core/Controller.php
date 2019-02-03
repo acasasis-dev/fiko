@@ -81,6 +81,11 @@ class CI_Controller {
 		session_start();		
 	}
 
+	public function sesscheck() {
+		if( !$_SESSION[ "userdata" ] )
+			redirect( "login" );
+	}
+
 	// --------------------------------------------------------------------
 
 	/**

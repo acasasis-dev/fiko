@@ -3,7 +3,12 @@
 class Home extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
+<<<<<<< HEAD
 		// $this->load->model('admin/M_home');		
+=======
+		$this->load->model('admin/M_home');
+		$this->sesscheck();
+>>>>>>> 1450d0dfa69f956bac92036a5dace32543976c63
 	}
 	public function index(){
 		$data['users'] = $this->display_user();

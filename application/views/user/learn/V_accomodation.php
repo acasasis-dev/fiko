@@ -95,7 +95,62 @@
 
       <!-- Main content -->
       <section class="content">
-        
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+              Accomodation: The temperature is hot
+            
+              <button onclick="playAudio( '0001-The-temperature-is-hot.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+          
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+              Accomodation: That room is cold
+            
+              <button onclick="playAudio( '0004-That-room-is-cold.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+          
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+              Accomodation: Coffee
+            
+              <button onclick="playAudio( '0012-coffee.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+          
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <div class="col-md-4">
+          <div class="box box-default">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
+              Accomodation: Heater
+            
+              <button onclick="playAudio( '0013-heater.mp3' )" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+          
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
       </section>
       <!-- /.content -->
     </div>
@@ -105,6 +160,12 @@
 </div>
 <!-- ./wrapper -->
 
+<script>
+  function playAudio( x ) {
+    y = new Audio( "<?= base_url() ?>files/accomodation/" + x )
+    y.play()
+  }
+</script>
 <!-- jQuery 3 -->
 <script src="<?= base_url()?>assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
