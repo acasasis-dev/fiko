@@ -102,10 +102,10 @@
           <a href="<?= base_url() ?>user/test/test/easy" class="btn btn-success" id="testbutton">Easy</a>
         </div>
         <div class="col-lg-4 col-xs-6">
-          <a href="#" class="btn btn-success" id="testbutton">Medium</a>
+          <a href="<?= base_url() ?>user/test/test/medium" class="btn btn-success" id="testbutton">Medium</a>
         </div>
         <div class="col-lg-4 col-xs-6">
-          <a href="#" class="btn btn-success" id="testbutton">Hard</a>
+          <a href="<?= base_url() ?>user/test/test/hard" class="btn btn-success" id="testbutton">Hard</a>
         </div>
         
       </section>
