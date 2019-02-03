@@ -14,4 +14,12 @@ class Test extends CI_Controller{
 	public function easy() {
 		$this->load->view( "user/test/v_test_easy.php" );
 	}
+
+	public function medium() {
+		$this->load->view( "user/test/v_test_easy.php" );	
+	}
+
+	public function hard() {
+		$this->load->view( "user/test/v_test_easy.php" );	
+	}	
 }
