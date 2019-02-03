@@ -7,6 +7,6 @@ class accomodation extends CI_Controller{
 		$this->sesscheck();
 	}
 	public function index(){
-		$this->load->view('user/learn/v_accomodation.php');
+		$this->load->view('user/learn/V_accomodation.php');
 	}
 }

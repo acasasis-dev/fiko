@@ -7,6 +7,6 @@ class family extends CI_Controller{
 		$this->sesscheck();
 	}
 	public function index(){
-		$this->load->view('user/learn/v_family.php');
+		$this->load->view('user/learn/V_family.php');
 	}
 }

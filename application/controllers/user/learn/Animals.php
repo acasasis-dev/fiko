@@ -7,6 +7,6 @@ class animals extends CI_Controller{
 		$this->sesscheck();
 	}
 	public function index(){
-		$this->load->view('user/learn/v_animals.php');
+		$this->load->view('user/learn/V_animals.php');
 	}
 }

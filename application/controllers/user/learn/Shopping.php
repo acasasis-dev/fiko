@@ -7,6 +7,6 @@ class shopping extends CI_Controller{
 		$this->sesscheck();
 	}
 	public function index(){
-		$this->load->view('user/learn/v_shopping.php');
+		$this->load->view('user/learn/V_shopping.php');
 	}
 }

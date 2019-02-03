@@ -7,6 +7,6 @@ class Bodyparts extends CI_Controller{
 		$this->sesscheck();
 	}
 	public function index(){
-		$this->load->view('user/learn/v_bodyparts.php');
+		$this->load->view('user/learn/V_bodyparts.php');
 	}
 }
