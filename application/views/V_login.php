@@ -117,7 +117,7 @@
               </div>
             </div>
             <div class="modal-footer" id="modal-footer">  
-              <button class="btn btn-success">Sign In</button>
+              <button type="submit">Sign In</button>
             </div>
           <?= form_close();?>
         </div>

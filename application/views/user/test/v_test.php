@@ -19,6 +19,7 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?= base_url()?>assets/dist/css/skins/_all-skins.min.css">
 
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -85,6 +86,7 @@
       <!-- /.container-fluid -->
     </nav>
   </header>
+  
   <!-- Full Width Column -->
   <div class="content-wrapper">
     <div class="container">
@@ -102,20 +104,15 @@
           <a href="<?= base_url() ?>user/test/test/easy" class="btn btn-success" id="testbutton">Easy</a>
         </div>
         <div class="col-lg-4 col-xs-6">
-          <a href="#" class="btn btn-success" id="testbutton">Medium</a>
+          <a href="<?= base_url() ?>user/test/test/medium" class="btn btn-success" id="testbutton">Medium</a>
         </div>
         <div class="col-lg-4 col-xs-6">
-          <a href="#" class="btn btn-success" id="testbutton">Hard</a>
+          <a href="<?= base_url() ?>user/test/test/hard" class="btn btn-success" id="testbutton">Hard</a>
         </div>
         
-      </section>
-      <!-- /.content -->
  
 
-</div>
-      
-
-   
+        
 
 <!-- jQuery 3 -->
 <script src="<?= base_url()?>assets/bower_components/jquery/dist/jquery.min.js"></script>

@@ -1,18 +1,18 @@
 body{
     font-size: 20px;
     font-family: monospace;
-    background-color: beige
+    background-color: beige;
 
 }
-
 #container{
-    margin : 110px auto;
+    margin : 100px auto;
     background-color: beige;
-    height: 430px;
+    height: 300px;
     width : 720px;
     border-radius: 10px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
+    opacity: 0.90;
 }
 #start{
     font-size: 1.5em;
@@ -24,7 +24,7 @@ body{
     cursor: pointer;
     position: absolute;
     left:250px;
-    top:50px;
+    top:15px;
     color : Red;
     margin : 120px auto;
     border: 2px solid red;
@@ -36,17 +36,17 @@ body{
 
 #qImg{
     width : 200px;
-    height : 200px;
+    height : 100px;
     position: absolute;
     left : 13px;
     top : 10px;
-      border-radius: 5px;
+    border-radius: 5px;
 }
 #qImg img{
     width : 250px;
-    height : 300px;
+    height : 200px;
     border-top-left-radius: 5px;
-    border : 5px solid grey;
+    border : 5px solid black;
     
 }
 
@@ -64,24 +64,26 @@ body{
 }
 
 #choices{
-    width : 340px;
+    width : 353px;
     position: absolute;
-    right : 6px;    
+    right : 10px;    
     top : 120px;
-    padding : 15px;
+    padding : 10px;
 
 }
 .choice{
     background-color: #66c2ff;
     display: inline;
-    width : 55px;
+    width : 50px;
     text-align: center;
-    border : 1px solid grey;
-    border-radius: 10px;
+    border : 2px solid grey solid;
+    border-radius: 100px;
     cursor: pointer;
-    padding : 20px;
-     width:500px;
+    padding : 18px;
+    width: 350px;
     height : 125px;
+    
+
 }
 .choice:hover{
     border : 2px solid grey;
@@ -100,6 +102,7 @@ body{
 }
 #counter{
     font-size: 3em;
+    color:transparent;
 
 }
 #btimeGauge{
@@ -112,7 +115,7 @@ body{
 #timeGauge{
     height : 10px;
     border-radius: 10px;
-    background-color: mediumseagreen;
+    background-color: red;
     margin-top : -10px;
     margin-left : 25px;
 }
@@ -134,11 +137,12 @@ body{
     margin-right : 5px;
 }
 #scoreContainer{
-    margin : 20px auto;
-    background-color: darkseagreen;
+    margin-top: -20px;
+    background-color: lightgray;
+
     opacity: 0.8;
-    height: 430px;
-    width : 710px;
+    height: 300px;
+    width : 720px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
@@ -146,7 +150,7 @@ body{
 }
 #scoreContainer img{
     position: absolute;
-    top:100px;
+    top:60px;
     left:325px;
 }
 #scoreContainer p{
@@ -154,14 +158,11 @@ body{
     display: block;
     width : 59px;
     height :59px;
-    top:130px;
+    bottom:105px;
     left:325px;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-}
-
-
 
 
 

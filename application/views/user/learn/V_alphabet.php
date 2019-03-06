@@ -29,13 +29,7 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <style type="text/css">
-    #audio{
-      background-color: #26a1c9;
-      border-style: none;
-      border-radius: 20px;
-      color: white;
-      font-size: 15px;
-    }
+   
   </style>
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
@@ -46,7 +40,7 @@
     <nav class="navbar navbar-static-top" id="navbar_header">
       <div class="container">
         <div class="navbar-header">
-          <a href="<?= base_url()?>user/home" class="navbar-brand"><b>FiKo</b><i> Online Filipino Korean Tutorial</i></a>
+          <a href="<?= base_url()?>assets/index2.html" class="navbar-brand"><b>FiKo</b><i> Online Filipino Korean Tutorial</i></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -105,50 +99,60 @@
 
       <!-- Main content -->
       <section class="content">
-        <div class="col-md-4">
-          <div class="box box-default">
+        <div class="row">
+
+        <div class="col-sm-3">
+         
+          <div class="box"  id= "learnbox" >
             <!-- /.box-header -->
             <div class="box-body">
-              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
-              Letter: A
-              
-              <!-- <audio controls style="width:100%;">
-                 -->
-
-
-                
-              <!-- <audio id="myAudio">  
-                <source src="<?= base_url()?>files/kakain.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio> -->
-
-                <button onclick="playAudio()" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              <span style="font-size: 100px; margin-left: "> ㅏ</span>
             </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-        </div>
-        <div class="col-md-4">
-          <div class="box box-default">
-            <!-- /.box-header -->
-            <div class="box-body">
-              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
-              Letter: B
-            
-              <button onclick="playAudio()" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+           
           
+            <!-- audio button -->
+            <div class ="audiobutton" id="a"  style="position:absolute; right: 5px; top: 20px; background-color: white;">
+             <button onclick="playAudio()" value="sound" type="button" id="aud" style="margin-left: 6px; ">
+              <span class="glyphicon glyphicon-volume-up" style="" ></span></button>
+           </div>
+           <span style="font-family:arial; font-size: 100%; color: green; position:absolute; left: 120%; top: 10%;"><span style="font-size: 200%;">Patinig</span><span style="font-size: 110%"> <br> A <br> Pagbigkas:(a)</span>
+            <!-- /.box-body -->
+      
+          </div>
+         
+
+          <!-- /.box -->
+        </div>
+
+        <div class="col-sm-3">
+           <div class="box"  id= "learnbox">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <span style=" font-size: 100px; margin-left: 5%"> ㅔ</span>
             </div>
+
+            <div class ="audiobutton" style="position:absolute; right: 5px; top: 20px;">
+             <button onclick="playAudio()" value="sound" type="button" id="audio" style="margin-left: 6px; ">
+              <span class="glyphicon glyphicon-volume-up" style="" ></span></button>
+           </div>
+
+            <span style="font-family:arial; font-size: 100%; color: green; position:absolute; left: 120%; top: 10%;"><span style="font-size: 200%;">Patinig</span><span style="font-size: 110%"> <br> Ae <br> Pagbigkas:(ae)</span>
+   
+          </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
         </div>
-        <div class="col-md-4">
-          <div class="box box-default">
+        <div class="col-md-3">
+
+           <div class="box"  id= "learnbox" >
             <!-- /.box-header -->
             <div class="box-body">
-              <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
-               Letter: C
-             <button onclick="playAudio()" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              <span style=" font-size: 100px; margin-left: 5%"> ㅔ</span>
+            </div>
+              
+           
+              
             </div>
             <!-- /.box-body -->
           </div>
@@ -160,7 +164,7 @@
             <div class="box-body">
               <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;">
                Letter: D
-              <button onclick="playAudio()" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
               
             </div>
             <!-- /.box-body -->
@@ -173,13 +177,14 @@
             <div class="box-body">
               <img src="<?= base_url()?>images/logo.png" style="width:100px;height:100px;"> 
                Letter: E
-              <button onclick="playAudio()" value="sound" type="button" id="audio"><span class="glyphicon glyphicon-play"></span></button>
+              
               
             </div>
             <!-- /.box-body -->
           </div>
           <!-- /.box -->
         </div>
+      </div>
       </section>
       <!-- /.content -->
     </div>
@@ -202,11 +207,13 @@
 <script src="<?= base_url()?>assets/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url()?>assets/dist/js/demo.js"></script>
+
 <script> 
   function playAudio() {
-    var x = new Audio('<?= base_url()?>files/kakain.mp3');
+    var x = new Audio(src='<?=base_url()?>/files/kakain.mp3');
     x.play();
   }
+  
 </script>
 
 

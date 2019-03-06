@@ -8,16 +8,16 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="<?= base_url()?>assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?= base_url()?>assets/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>assets/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="<?= base_url()?>assets/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>assets/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?= base_url()?>assets/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>assets/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="<?= base_url()?>assets/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="<?= base_url() ?>assets/dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +37,9 @@
     <nav class="navbar navbar-static-top" id="navbar_header">
       <div class="container">
         <div class="navbar-header">
+
           <a href="<?= base_url()?>user/home" class="navbar-brand"><b>FiKo</b><i> Online Filipino Korean Tutorial</i></a>
+
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
             <i class="fa fa-bars"></i>
           </button>
@@ -46,8 +48,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="<?= base_url()?>user/home">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">About</a></li>
+            <li class="active"><a href="<?= base_url() ?>user/home">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="About1.php">About</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
           <form class="navbar-form navbar-left" role="search">
@@ -70,7 +72,7 @@
                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                 <span class="hidden-xs"><?= $_SESSION[ "userdata" ][0]->firstname. " " .$_SESSION[ "userdata" ][0]->lastname ?></span>
               </a>
-              <ul class="dropdown-menu" role="menu" style="width: 10px;">
+              <ul class="dropdown-menu" role="menu" style="width: -0px;">
                 <li><a href="<?= base_url()?>user/home/userprofile">User Profile</a></li>
                 <li><a href="#">Record</a></li>
                 <li><a href="#">Rankings</a></li>
@@ -85,6 +87,7 @@
       <!-- /.container-fluid -->
     </nav>
   </header>
+
   <!-- Full Width Column -->
   <div class="content-wrapper" id="bodyhome" style="background-image: url('/images/UI_Home2.jpg')">
     <div class="container">
@@ -93,14 +96,31 @@
         <!-- for header -->
       </section>
 
+
       <!-- Main content -->
       <section class="content">
           
           <a href="<?=base_url()?>user/learn/learn" class="btn btn-success" id="learn">Learn</a>
-        
-          <a href="<?=base_url()?>user/test/test" class="btn btn-success" id="test">Test Yourself</a>
 
-        
+          <a href="user/test/test" class="btn btn-success" id="test" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Test Yourself</a>        
+  <!-- Trigger the modal with a button -->
+             <div id="myModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Reminders before taking the Quiz</h4>
+      </div>
+      <div class="modal-body">
+        <p>Cheche bureche</p>
+      </div>
+      <div class="modal-footer">
+        <a href="<?=base_url()?>user/test/test" class="btn btn-success" id="test" class="btn btn">Continue to Exam</a>
+      </div>
+    </div>
+
+  </div>
+</div>
       </section>
       <!-- /.content -->
     </div>
@@ -108,7 +128,6 @@
   </div>
   <!-- /.content-wrapper -->
 </div>
-<!-- ./wrapper -->
 
 <!-- jQuery 3 -->
 <script src="<?= base_url()?>assets/bower_components/jquery/dist/jquery.min.js"></script>

@@ -12,91 +12,7 @@ const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv= document.getElementById("scoreContainer");
 
-// create questions
-let questions = [
-    {
-        question : "What does the picture stand for?",
-        imgSrc : "img/koreanD.jpg",
-        choiceA : "D",
-        choiceB : "Z",
-        choiceC : "T",
-        choiceD : "R",
-        correct : "A",
-    },{
-        question : "What does the picture stand for?",
-        imgSrc : "img/koreanB.jpg",
-        choiceA : "S",
-        choiceB : "B",
-        choiceC : "U",
-        choiceD : "M",
-        correct : "B",
-    },{
-        question : "What does the picture stand for?",
-        imgSrc : "img/koreanA.jpg",
-        choiceA : "X",
-        choiceB : "G",
-        choiceC : "A",
-        choiceD : "L",
-        correct : "C",  
-    },{
-       question : "What does the picture stand for?",
-        imgSrc : "img/koreanC.jpg",
-        choiceA : "J",
-        choiceB : "N",
-        choiceC : "Y",
-        choiceD : "C",
-        correct : "D",  
-    },{
-       question : "What does the picture stand for?",
-        imgSrc : "img/",
-        choiceA : "",
-        choiceB : "",
-        choiceC : "",
-        choiceD : "",
-        correct : "A",  
-    },{
-       question : "What does the picture stand for?",
-        imgSrc : "img/",
-        choiceA : "",
-        choiceB : "",
-        choiceC : "",
-        choiceD : "",
-        correct : "D",  
-    },{
-        question : "What does the picture stand for?",
-        imgSrc : "img/",
-        choiceA : "",
-        choiceB : "",
-        choiceC : "",
-        choiceD : "",
-        correct : "B",  
-    },{
-        question : "What does the picture stand for?",
-        imgSrc : "img/",
-        choiceA : "",
-        choiceB : "",
-        choiceC : "",
-        choiceD : "",
-        correct : "C",  
-    },{
-        question : "What does the picture stand for?",
-        imgSrc : "img/",
-        choiceA : "",
-        choiceB : "",
-        choiceC : "",
-        choiceD : "",
-        correct : "B",  
-    },{
-        question : "What does the picture stand for?",
-        imgSrc : "img/",
-        choiceA : "",
-        choiceB : "",
-        choiceC : "",
-        choiceD : "",
-        correct : "C",  
-    }
-    
-];
+questions = JSON.parse( $.get({ url: "/user/test/test/getquestions?dif=1&sk=1", async: false }).responseText )
 
 // create some variables
 
@@ -205,15 +121,15 @@ function scoreRender(){
     scoreDiv.style.display = "block";
     
     // calculate the amount of question percent answered by the user
-    const scorePercent = Math.round(100 * score/questions.length);
+    const scorePercent = Math.round(10 * score/questions.length);
     
     //choose the image based on the scorePerCent
-    let img = (scorePercent >= 80) ? "img/5.png" :
-              (scorePercent >= 60) ?  "img/4.png" :
-              (scorePercent >= 40) ? "img/3.png" :
-              (scorePercent >= 20) ? "img/2.png" :
+    let img = (scorePercent >= 8) ? base_url+"images/5.png" :
+              (scorePercent >= 6) ? base_url+"images/4.png" :
+              (scorePercent >= 4) ? base_url+"images/3.png" :
+              (scorePercent >= 2) ? base_url+"images/2.png" :
               "img/1.png";
     scoreDiv.innerHTML = "<img src="+ img +">";
-    scoreDiv.innerHTML += "<p>Your Score is:"+ scorePercent +"</p>"
+    scoreDiv.innerHTML +=  "<p><br>Your Score is : "+ scorePercent +"</p>"
 
 }
